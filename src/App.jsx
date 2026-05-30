@@ -301,8 +301,12 @@ function App() {
 
         <div className="top">
           <div>
-            <p className="eyebrow">Daily To-Do</p>
-            <h1>Today&apos;s Work</h1>
+            <div className="app-header">
+  <div>
+    <h1>Daily Todo</h1>
+    <p>Plan your day. Stay consistent.</p>
+  </div>
+</div>
             <p className="date">{todayKey}</p>
           </div>
 

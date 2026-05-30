@@ -257,3 +257,19 @@ h2 {
     align-items: flex-start;
   }
 }
+.app-header {
+  margin-bottom: 24px;
+}
+
+.app-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  color: #111827;
+}
+
+.app-header p {
+  margin-top: 6px;
+  color: #6b7280;
+  font-size: 15px;
+}
