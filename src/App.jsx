@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import {
   onAuthStateChanged,
+  signInAnonymously,
   signInWithPopup,
   signOut,
 } from "firebase/auth";
@@ -169,6 +170,13 @@ function App() {
       alert(error.message);
     }
   }
+  async function loginAsGuest() {
+  try {
+    await signInAnonymously(auth);
+  } catch (error) {
+    alert(error.message);
+  }
+}
 
   async function logoutUser() {
     await signOut(auth);
@@ -272,6 +280,10 @@ function App() {
           <button className="loginBtn" onClick={loginWithGoogle}>
             Continue with Google
           </button>
+          <button onClick={loginAsGuest} className="guest-btn">
+          Continue without login
+          </button>
+
         </section>
       </main>
     );

@@ -118,7 +118,7 @@ h2 {
 }
 
 .inputRow button,
-.loginBtn {
+.loginBtn,.guest-btn {
   border: none;
   border-radius: 14px;
   padding: 12px 17px;
@@ -216,7 +216,7 @@ h2 {
   margin: 80px auto;
 }
 
-.loginBtn {
+.loginBtn,.guest-btn{
   margin-top: 22px;
   width: 100%;
 }
