@@ -13,11 +13,7 @@ import {
 import { auth, provider, db } from "./firebase";
 import "./App.css";
 
-const defaultFixedTasks = [
-  { id: "fixed-java", text: "Java Spring Boot study" },
-  { id: "fixed-github", text: "GitHub push / project update" },
-  { id: "fixed-job", text: "Job apply / recruiter follow-up" },
-];
+const defaultFixedTasks = [];
 
 function getDateKey(date = new Date()) {
   const year = date.getFullYear();
